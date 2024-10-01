@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Reset margins and padding */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+h2 {
+  color: #4CAF50;
+  /*border-bottom: 2px solid #4CAF50;*/
+  padding-bottom: 10px;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.features, .services {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.feature, .service {
+  flex: 1 1 45%;
+  background: #8da590;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.App-link {
-  color: #61dafb;
+/* Body Background with Gradient */
+body {
+  background: linear-gradient(90deg, #222522 0%, #6c6f6c 100%);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  color: white; /* White text for readability */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Top Banner with an image */
+.banner {
+  width: 100%;
+  height: 100px; /* Adjust the height if needed */
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform: translateY(-10%);
+}
+
+/* Large Text Section */
+.large-text-section {
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white overlay for contrast */
+  text-align: center;
+  color: rgb(243, 243, 243);
+  border-radius: 8px;
+}
+
+.large-text-section h2 {
+  margin-bottom: 20px;
+}
+
+.large-text-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Custom Navbar Styling */
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: rgb(82, 81, 81);
+  border-radius: 5px;
+}
+
+.footer{
+  margin-top: 50px;
 }
