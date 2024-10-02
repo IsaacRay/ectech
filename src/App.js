@@ -40,7 +40,7 @@ const App = () => {
       <div className="large-text-section container mt-5">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div><img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo"  /></div>
+            <div><img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" className="logo-image" /></div>
             <p>
             <section>
         <div class="features">
